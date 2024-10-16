@@ -18,7 +18,7 @@
 #   -> this excludes GLIBC
 #
 
-BGEN_PATH     =
+BGEN_PATH     = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))../bgen
 HAS_BOOST_IOSTREAM := 0
 MKLROOT       =
 # directory containing libhts.a or libhts.so
